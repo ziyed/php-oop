@@ -26,14 +26,30 @@ class PropertyTest{
     {
         echo "Unsetting '$name'\n";        
     }
+	
+	public function __call($name, $value){
+		echo 'Called Function Name: '.$name;
+		echo "<pre>";
+		print_r($value);
+		echo "</pre>";
+	}
+	
+	public static function __callStatic($name, $value){
+		echo 'Called Static Function Name: '.$name;
+		echo "<pre>"; 
+		print_r($value);
+		echo "</pre>";
+	}
     
 }
 
 
 $obj = new PropertyTest;
 
-$obj->a = 1;
-echo $obj->a 
+//$obj->a = 1;
+//echo $obj->a 
+$obj->myfunction(10, 'ziyed');
 
+PropertyTest::myStaticFunction(10);
 
 ?>
