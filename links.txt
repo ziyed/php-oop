@@ -1,0 +1,3 @@
+Zend Memory Management
+======================
+http://www.webreference.com/programming/php_mem/2.html

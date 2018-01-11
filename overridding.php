@@ -7,7 +7,6 @@ class Father{
         echo "Saved Money on Bank";
     }    
 }
-
 class Son extends Father{
 	
 	public function money(){
@@ -15,12 +14,8 @@ class Son extends Father{
 	}
 	
 }
-
-
 $obj = new Son;
 
 $obj->money();
-
-
 
 ?>
