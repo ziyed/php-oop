@@ -11,15 +11,23 @@ require './file1.php';
 
 
 use App\MyProduct;
+use const App\MyConst as MC;
+use function App\show as SH;
 //use App\Core as apc;
 
 //App\show();
 //apc\show();
 //ap\show();
 
+
 $obj = new MyProduct();
 
-echo $obj->a;
+echo $obj->a.'<br/>';
 
+//Printing Constent variable
+echo MC.'<br/>';
+
+//Printing function
+SH();
 
 

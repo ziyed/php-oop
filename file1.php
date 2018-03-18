@@ -23,3 +23,5 @@ abstract class Abst{
     abstract public function show(); 
     
 }
+
+const MyConst = 125;
