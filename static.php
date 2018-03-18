@@ -6,13 +6,13 @@ class Father{
     protected static $doller = 50;
     private static $bankCheck = 85478;
 	
-    public static function permission(){
+    public function permission(){
         echo 'Father Permission Granted: '. self::$bankCheck.'<br/>';
     }
 }
 class Son extends Father{
     
-    public static function permission() {
+    public function permission() {
         echo 'inside child permission';
     }
 
@@ -22,10 +22,10 @@ class Son extends Father{
 		
 }
 
-//Father::permission();
-$obj = new Son();
+Father::permission();
+//$obj = new Father();
 
-$obj->permission();
+//$obj->permission();
 
 ///echo Father::$money;
 

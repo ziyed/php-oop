@@ -5,21 +5,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+namespace App\Core;
 
-require './file1.php';
-//require './file2.php';
+function show(){
+    echo 'I am in App\Core <br/>';
+}
 
-
-use App\MyProduct;
-//use App\Core as apc;
-
-//App\show();
-//apc\show();
-//ap\show();
-
-$obj = new MyProduct();
-
-echo $obj->a;
-
+class Product{    
+    public $a = 100;
+}
 
 
